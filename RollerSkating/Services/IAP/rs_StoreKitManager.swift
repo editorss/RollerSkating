@@ -15,16 +15,16 @@ struct rs_IAPProduct {
     let coins: Int          // 购买获得的金币数量
     let price: String       // 显示价格
     
-    // 预设8个内购套餐（后期修改商品ID、金币数量和价格）
+    // 内购套餐配置（已配置 App Store Connect 商品）
     static let rs_allProducts: [rs_IAPProduct] = [
-        rs_IAPProduct(id: "com.rollerskating.coins.100", coins: 100, price: "$0.99"),
-        rs_IAPProduct(id: "com.rollerskating.coins.300", coins: 300, price: "$1.99"),
-        rs_IAPProduct(id: "com.rollerskating.coins.500", coins: 500, price: "$2.99"),
-        rs_IAPProduct(id: "com.rollerskating.coins.1000", coins: 1000, price: "$4.99"),
-        rs_IAPProduct(id: "com.rollerskating.coins.2000", coins: 2000, price: "$9.99"),
-        rs_IAPProduct(id: "com.rollerskating.coins.5000", coins: 5000, price: "$19.99"),
-        rs_IAPProduct(id: "com.rollerskating.coins.10000", coins: 10000, price: "$39.99"),
-        rs_IAPProduct(id: "com.rollerskating.coins.50000", coins: 50000, price: "$99.99")
+        rs_IAPProduct(id: "ztfqrzlzcoldzkkg", coins: 400, price: "$0.99"),
+        rs_IAPProduct(id: "syjybajtjmgtdaun", coins: 800, price: "$1.99"),
+        rs_IAPProduct(id: "drthvgsrerhasdtv", coins: 1888, price: "$2.99"),
+        rs_IAPProduct(id: "tkavaaxcixiatwxu", coins: 2450, price: "$4.99"),
+        rs_IAPProduct(id: "qfxzxayaytpneldv", coins: 5150, price: "$9.99"),
+        rs_IAPProduct(id: "rhyuutfzmfurhqeh", coins: 10800, price: "$19.99"),
+        rs_IAPProduct(id: "isaqcqarroaamqwr", coins: 29400, price: "$49.99"),
+        rs_IAPProduct(id: "rvzlclzclfuphdqx", coins: 63700, price: "$99.99")
     ]
 }
 

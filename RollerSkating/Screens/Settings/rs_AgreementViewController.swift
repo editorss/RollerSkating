@@ -22,8 +22,8 @@ enum rs_AgreementType {
     
     var rs_url: String {
         switch self {
-        case .privacy: return "https://www.apple.com/legal/privacy/"
-        case .user: return "https://www.apple.com/legal/internet-services/itunes/"
+        case .privacy: return "https://docs.google.com/document/d/e/2PACX-1vQDiGEVwO54wwNkTs9unQpVNiJ224DcaKEyS1ptDfPZ6WqYk5FM0IP11h5gQjRniQ/pub"
+        case .user: return "https://docs.google.com/document/d/e/2PACX-1vRnCM4dts2MKuCwSOBixPRfiesbsMZa__2nuAEoguAiNnRPm8B8YoWqPFI1C6yZhQ/pub"
         }
     }
 }

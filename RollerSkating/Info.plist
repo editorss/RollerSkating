@@ -2,18 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSCameraUsageDescription</key>
-	<string>AI Move Recognition needs camera access to record your skating moves so AI can analyze your technique and provide improvement suggestions.</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>This app needs access to your photo library to let you choose a profile avatar.</string>
-	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>This app needs permission to save your profile avatar.</string>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>This app needs microphone access to enable voice during video calls.</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Skate Spots needs your location to show nearby skating areas on the map.</string>
-	<key>UIUserInterfaceStyle</key>
-	<string>Dark</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

@@ -223,11 +223,18 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RollerSkating/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MetachatSkating;
+				INFOPLIST_KEY_NSCameraUsageDescription = "AI Move Recognition needs camera access to record your skating moves so AI can analyze your technique and provide improvement suggestions.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Skate Spots needs your location to show nearby skating areas on the map.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app needs microphone access to enable voice during video calls.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app needs permission to save your profile avatar.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app needs access to your photo library to let you choose a profile avatar.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -254,25 +261,33 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6MZ94A4YPV;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RollerSkating/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MetachatSkating;
+				INFOPLIST_KEY_NSCameraUsageDescription = "AI Move Recognition needs camera access to record your skating moves so AI can analyze your technique and provide improvement suggestions.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Skate Spots needs your location to show nearby skating areas on the map.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app needs microphone access to enable voice during video calls.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app needs permission to save your profile avatar.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app needs access to your photo library to let you choose a profile avatar.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jianlin.RollerSkating;
+				PRODUCT_BUNDLE_IDENTIFIER = com.roller.skating.share;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
