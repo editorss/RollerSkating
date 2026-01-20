@@ -223,7 +223,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RollerSkating/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = MetachatSkating;
+				INFOPLIST_KEY_CFBundleDisplayName = TigoSkating;
 				INFOPLIST_KEY_NSCameraUsageDescription = "AI Move Recognition needs camera access to record your skating moves so AI can analyze your technique and provide improvement suggestions.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Skate Spots needs your location to show nearby skating areas on the map.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app needs microphone access to enable voice during video calls.";
@@ -267,7 +267,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RollerSkating/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = MetachatSkating;
+				INFOPLIST_KEY_CFBundleDisplayName = TigoSkating;
 				INFOPLIST_KEY_NSCameraUsageDescription = "AI Move Recognition needs camera access to record your skating moves so AI can analyze your technique and provide improvement suggestions.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Skate Spots needs your location to show nearby skating areas on the map.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app needs microphone access to enable voice during video calls.";
