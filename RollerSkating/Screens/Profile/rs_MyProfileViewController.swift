@@ -236,9 +236,9 @@ final class rs_MyProfileViewController: UIViewController {
         }
         rs_emptyPostImageView.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
-            make.top.equalTo(rs_myPostTitleImageView.snp.bottom).offset(40)
-            make.width.equalTo(200)
-            make.height.equalTo(180)
+            make.top.equalTo(rs_myPostTitleImageView.snp.bottom).offset(0)
+            make.width.equalTo(150)
+            make.height.equalTo(150)
         }
         
         rs_tableView.delegate = self

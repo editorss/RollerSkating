@@ -23,7 +23,7 @@ class rs_CompletionViewController: UIViewController {
     private let rs_bgImageView: UIImageView = {
         let iv = UIImageView()
         iv.image = UIImage(named: "go_skate背景图")
-        iv.contentMode = .scaleAspectFill
+        iv.contentMode = .scaleToFill
         return iv
     }()
     
