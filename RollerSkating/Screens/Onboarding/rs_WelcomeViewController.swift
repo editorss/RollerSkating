@@ -178,8 +178,9 @@ class rs_WelcomeViewController: UIViewController {
         AF.request("https://www.apple.com").response { [weak self] response in
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                 SVProgressHUD.dismiss()
-                let genderVC = rs_GenderViewController()
-                self?.navigationController?.pushViewController(genderVC, animated: true)
+                // 直接跳转到PlayStyle页面，跳过Gender和Age选择（App Store审核要求）
+                let playStyleVC = rs_PlayStyleViewController()
+                self?.navigationController?.pushViewController(playStyleVC, animated: true)
             }
         }
     }

@@ -1,9 +1,0 @@
-金额		 金币数		  苹果商品id
-99.99		63700		rvzlclzclfuphdqx
-49.99		29400		isaqcqarroaamqwr
-19.99		10800		rhyuutfzmfurhqeh
-9.99		5150		qfxzxayaytpneldv
-4.99		2450		tkavaaxcixiatwxu
-2.99		1888		drthvgsrerhasdtv
-1.99		800		    syjybajtjmgtdaun
-0.99		400		    ztfqrzlzcoldzkkg
