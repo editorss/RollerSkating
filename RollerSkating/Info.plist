@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>FacebookDisplayName</key>
+	<string>tigoSkating</string>
+	<key>FacebookClientToken</key>
+	<string>7039fd5352f9952a4d69ede495ee989f</string>
+	<key>FacebookAppID</key>
+	<string>1667848357520732</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

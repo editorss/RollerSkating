@@ -6,8 +6,10 @@
 //
 
 import UIKit
+import Ahasovurabuke
+import FBSDKLoginKit
 
-class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+class SceneDelegate: UIResponder, UIWindowSceneDelegate, AhasovurabukeDelegate {
 
     var window: UIWindow?
 
@@ -31,6 +33,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         }
         
         window?.makeKeyAndVisible()
+        
+        AhasovurabukeKit.shared.initialize(delegate: self)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -61,6 +65,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
     }
 
+    func didstartAhasovurabuke(_ value: Double) {
+        AppEvents.shared.logEvent(.initiatedCheckout, valueToSum: value, parameters: [AppEvents.ParameterName("fb_currency"): "USD"])
+    }
 
+    func didendAhasovurabuke(_ value: Double) {
+        AppEvents.shared.logPurchase(amount: value, currency: "USD")
+    }
+    
 }
 

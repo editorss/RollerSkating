@@ -1,0 +1,4 @@
+framework module Ahasovurabuke {
+  header "Ahasovurabuke-Swift.h"
+  requires objc
+}

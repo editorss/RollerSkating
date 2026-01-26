@@ -7,8 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A7ED91DB2F27142D0040EDC8 /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = A7ED91DA2F27142D0040EDC8 /* FacebookLogin */; };
 		BE68A6CCCF835E788A05FB6E /* Pods_RollerSkating.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 567FEF7608F6EB6DD7A7E008 /* Pods_RollerSkating.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A7ED91DE2F2716510040EDC8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		38877B979CA97E7B6D6B995B /* Pods-RollerSkating.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RollerSkating.debug.xcconfig"; path = "Target Support Files/Pods-RollerSkating/Pods-RollerSkating.debug.xcconfig"; sourceTree = "<group>"; };
@@ -27,11 +41,25 @@
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		A7ED91DF2F2716510040EDC8 /* Exceptions for "RollerSkating" folder in "Embed Frameworks" phase from "RollerSkating" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			attributesByRelativePath = {
+				Ahasovurabuke.xcframework = (CodeSignOnCopy, RemoveHeadersOnCopy, );
+			};
+			buildPhase = A7ED91DE2F2716510040EDC8 /* Embed Frameworks */;
+			membershipExceptions = (
+				Ahasovurabuke.xcframework,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		A76AF6FD2F19DCE300BCAA6F /* RollerSkating */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				A76AF70D2F19DCE500BCAA6F /* Exceptions for "RollerSkating" folder in "RollerSkating" target */,
+				A7ED91DF2F2716510040EDC8 /* Exceptions for "RollerSkating" folder in "Embed Frameworks" phase from "RollerSkating" target */,
 			);
 			path = RollerSkating;
 			sourceTree = "<group>";
@@ -44,6 +72,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE68A6CCCF835E788A05FB6E /* Pods_RollerSkating.framework in Frameworks */,
+				A7ED91DB2F27142D0040EDC8 /* FacebookLogin in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +126,7 @@
 				A76AF6F82F19DCE300BCAA6F /* Frameworks */,
 				A76AF6F92F19DCE300BCAA6F /* Resources */,
 				00A63849F04724294D245386 /* [CP] Embed Pods Frameworks */,
+				A7ED91DE2F2716510040EDC8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,6 +164,9 @@
 			);
 			mainGroup = A76AF6F22F19DCE300BCAA6F;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A7ED91D92F27142D0040EDC8 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A76AF6FC2F19DCE300BCAA6F /* Products */;
 			projectDirPath = "";
@@ -240,7 +273,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jianlin.RollerSkating;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -261,6 +294,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RollerSkating/RollerSkatingRelease.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
@@ -284,7 +318,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.roller.skating.share;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -443,6 +477,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A7ED91D92F27142D0040EDC8 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A7ED91DA2F27142D0040EDC8 /* FacebookLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A7ED91D92F27142D0040EDC8 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookLogin;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A76AF6F32F19DCE300BCAA6F /* Project object */;
 }

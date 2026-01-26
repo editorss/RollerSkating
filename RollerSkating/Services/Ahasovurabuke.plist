@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Ahasovurabukename</key>
+	<string>RollerShaking</string>
+	<key>Ahasovurabukeurl</key>
+	<string>opi.cphub.link</string>
+	<key>Ahasovurabukeid</key>
+	<string>42077278</string>
+	<key>Ahasovurabukekey</key>
+	<string>uv78ipjy06o1oxs0</string>
+	<key>Ahasovurabukeiv</key>
+	<string>p6qwqm1ljse4i9l0</string>
+	<key>Ahasovurabukebg</key>
+	<string>启动</string>
+	<key>Ahasovurabukelg</key>
+	<string>启动</string>
+	<key>Ahasovurabukedebug</key>
+	<false/>
+</dict>
+</plist>
