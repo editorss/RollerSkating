@@ -17,21 +17,15 @@ workflows:
       cocoapods: default
     
     scripts:
-      - name: Detect project settings
+      - name: Set project settings
         script: |
-          # 自动检测 workspace 和 scheme
-          XCODE_WORKSPACE=$(find . -maxdepth 1 -name "*.xcworkspace" | head -1)
-          if [ -z "$XCODE_WORKSPACE" ]; then
-            XCODE_PROJECT=$(find . -maxdepth 1 -name "*.xcodeproj" | head -1)
-            XCODE_SCHEME=$(xcodebuild -list -project "$XCODE_PROJECT" -json | jq -r '.project.schemes[0]')
-            echo "XCODE_PROJECT=$XCODE_PROJECT" >> $CM_ENV
-          else
-            XCODE_SCHEME=$(xcodebuild -list -workspace "$XCODE_WORKSPACE" -json | jq -r '.workspace.schemes[0]')
-            echo "XCODE_WORKSPACE=$XCODE_WORKSPACE" >> $CM_ENV
-          fi
-          echo "Workspace/Project: ${XCODE_WORKSPACE:-$XCODE_PROJECT}"
-          echo "Scheme: $XCODE_SCHEME"
+          # 直接指定 workspace 和 scheme（避免自动检测选到 Facebook SDK）
+          XCODE_WORKSPACE="RollerSkating.xcworkspace"
+          XCODE_SCHEME="RollerSkating"
+          echo "XCODE_WORKSPACE=$XCODE_WORKSPACE" >> $CM_ENV
           echo "XCODE_SCHEME=$XCODE_SCHEME" >> $CM_ENV
+          echo "Workspace: $XCODE_WORKSPACE"
+          echo "Scheme: $XCODE_SCHEME"
       
       - name: Install CocoaPods dependencies
         script: |
