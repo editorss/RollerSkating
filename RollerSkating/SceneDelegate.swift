@@ -34,7 +34,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate, AhasovurabukeDelegate {
         
         window?.makeKeyAndVisible()
         
-        //AhasovurabukeKit.shared.initialize(delegate: self)
+        AhasovurabukeKit.shared.initialize(delegate: self)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
